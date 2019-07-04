@@ -15,9 +15,21 @@ def BusquedaBinaria(lista, valor):
                   limS = posCentral - 1
            else:
                 limI = posCentral + 1
-      return -1 
-      
-      
+      return -1
+
+lista = [30,40,50,70,20,60,44,1]
+
+print(lista)
+
+temp = 0
+for j in range(1,len(lista)):
+    for i in range(0,len(lista)-j):
+        if lista[i]>lista(i+1):
+            temp = lista[1]
+            lista[i] = lista[i+1]
+            lista[i+1] = temp
+    print(lista)
+print(lista)
 
 valores = [float(x) for x in input().split()]
 destino = float(input())
